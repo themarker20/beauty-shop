@@ -50,7 +50,7 @@ const lightboxImg = lightbox.querySelector(".image img");
 boxes.forEach((box) => {
   box.addEventListener("click", () => {
     const code = box.getAttribute("data-code");
-    lightboxImg.src = `../imgs/products/${code}.jpg`;
+    lightboxImg.src = `./../imgs/products/${code}.jpg`;
     overlay.style.display = "block";
     lightbox.style.display = "flex";
   });
