@@ -1,0 +1,39 @@
+/* Over Write */
+.master {
+  height: 70vh;
+}
+
+/*About*/
+.about {
+  padding: var(--section-padding) 0;
+  overflow: hidden;
+  text-align: center;
+  /* height: 140vh; */
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+.about p {
+  width: 70%;
+  font-size: 18px;
+}
+
+.about img {
+  position: relative;
+  bottom: -90px;
+  margin-top: -90px;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .about img {
+    bottom: -60px;
+    margin-top: -60px;
+  }
+}
+
+span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+/*About*/

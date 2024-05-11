@@ -1,0 +1,57 @@
+/* Over Write */
+.master {
+  height: 70vh;
+}
+
+.gallery {
+  padding: calc(var(--section-padding)) 0;
+  padding-bottom: var(--section-padding);
+  position: relative;
+  background-color: var(--transparent-blue);
+}
+
+.gallery .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.gallery .box {
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0px 12px 20px 0px rgba(255, 255, 255, 0.13),
+    0px 2px 4px 0px rgba(0 0 0 / 12%);
+}
+
+.gallery .box .image {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery .box .image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.226);
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  z-index: 2;
+}
+
+.gallery .box .image:hover::before {
+  animation: flashing 0.7s;
+}
+
+.gallery .box img {
+  max-width: 100%;
+  transition: all 0.4s;
+  transition-delay: 0.2s;
+}
+
+.gallery .box .image:hover img {
+  transform: rotate(5deg) scale(1.1);
+}
