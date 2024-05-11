@@ -295,7 +295,7 @@ header nav .form i {
 .footer .container {
   background-color: #191919;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   gap: 40px;
   width: 100%;
   padding: 4%;
