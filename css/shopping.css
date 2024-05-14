@@ -293,9 +293,9 @@ section.style .products .product-box .info .order a.btn,
     height: 85%;
     /* display: flex;  In JS*/
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column !important;
-    gap: 15px;
+    gap: 60px;
   }
 
   .pop-up-lightbox .image {
