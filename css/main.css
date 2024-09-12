@@ -1,7 +1,7 @@
 /*Vars*/
 :root {
-  --main-color: #e70bdc;
-  --transparent-blue: rgba(110, 6, 119, 0.7);
+  --main-color: #ab3636;
+  --transparent-blue: rgb(107, 115, 190);
   --section-padding: 100px;
 }
 /*Vars*/
@@ -70,10 +70,10 @@ ul {
 }
 
 .main-heading h2 {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: normal;
   text-transform: uppercase;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
   position: relative;
 }
 
@@ -97,7 +97,7 @@ ul {
   height: 15px;
   border-radius: 50%;
   border: 2px solid #333;
-  background-color: #fff;
+  background-color: var(--main-color);
   bottom: -38px;
 }
 
@@ -120,13 +120,15 @@ ul {
 /*Header*/
 .master {
   position: relative;
-  height: 100vh;
+  height: 120vh;
   padding-bottom: var(--section-padding);
-  background-image: url(../imgs/home-alt.avif);
-  background-attachment: fixed;
+  background-image: url(../imgs/bg-main-2.jpg);
   background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
-.master .overlay {
+
+/* .master .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -134,7 +136,8 @@ ul {
   width: 100%;
   height: 100%;
   background-color: #19191980;
-}
+} */
+
 header {
   position: absolute;
   left: 0;
@@ -166,10 +169,13 @@ header .logo img {
 }
 
 header nav {
+  height: 80px;
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  background-color: #00000063;
+  padding: 0 20px;
 }
 
 header nav .toggle-menu {
@@ -245,11 +251,12 @@ header nav .form i {
 /*Header*/
 /*Design*/
 .design {
-  padding: var(--section-padding) 0;
-  height: 600px;
+  padding: 10% 0;
+  height: 850px;
   position: relative;
   background-image: url(./../imgs/bg-land.jpg);
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -283,7 +290,7 @@ header nav .form i {
 
 .design .image img {
   position: relative;
-  bottom: -150px;
+  bottom: -180px;
 }
 
 .design .text {
@@ -300,6 +307,7 @@ header nav .form i {
 
 .design .text ul li {
   padding: 15px 0;
+  font-size: 18px;
 }
 
 /*Design*/
@@ -470,7 +478,8 @@ footer .container {
 
 footer img {
   margin-bottom: 20px;
-  max-width: 90%;
+  width: 200px;
+  max-width: 50%;
 }
 
 footer p:not(.copyright) {
